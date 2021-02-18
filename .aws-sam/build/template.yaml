@@ -1,0 +1,17 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: hellword-api
+Globals:
+  Function:
+    Timeout: 60
+Resources:
+  GlobalDependenciesLayer:
+    Type: AWS::Serverless::LayerVersion
+    Properties:
+      LayerName: GlobalDependenciesLayer
+      ContentUri: GlobalDependenciesLayer
+      CompatibleRuntimes:
+      - nodejs12.x
+      RetentionPolicy: Retain
+    Metadata:
+      BuildMethod: nodejs12.x
