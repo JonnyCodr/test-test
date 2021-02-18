@@ -10,3 +10,11 @@ build_method = "nodejs12.x"
 compatible_runtimes = ["nodejs12.x"]
 source_md5 = ""
 layer = "GlobalDependenciesLayer"
+
+[layer_build_definitions.72442ed5-6999-4196-a41c-03ded3a87190]
+layer_name = "GlobalApiResponsesLayer"
+codeuri = "layers/api-responses/dist"
+build_method = "nodejs12.x"
+compatible_runtimes = ["nodejs12.x"]
+source_md5 = ""
+layer = "GlobalApiResponsesLayer"

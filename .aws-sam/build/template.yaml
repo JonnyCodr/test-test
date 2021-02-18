@@ -15,3 +15,13 @@ Resources:
       RetentionPolicy: Retain
     Metadata:
       BuildMethod: nodejs12.x
+  GlobalApiResponsesLayer:
+    Type: AWS::Serverless::LayerVersion
+    Properties:
+      LayerName: GlobalApiResponsesLayer
+      ContentUri: GlobalApiResponsesLayer
+      CompatibleRuntimes:
+      - nodejs12.x
+      RetentionPolicy: Retain
+    Metadata:
+      BuildMethod: nodejs12.x
