@@ -1,6 +1,7 @@
 {
   "name": "api-responses-layer",
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
     "build:dev": "npm run clean && mkdir ./dist && cp package.json ./dist/package.json && webpack -w",
     "build:prod": "npm run clean && mkdir ./dist && cp package.json ./dist/package.json && NODE_ENV=${NODE_ENV:-production} webpack",
